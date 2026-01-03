@@ -6,10 +6,6 @@ function EventInfo() {
       {/* Date + Location */}
       <div className="event-meta">
         <div className="meta-left">
-          <div className="date-box">
-            <span className="month">NOV</span>
-            <span className="day">7</span>
-          </div>
         </div>
 
         <div className="meta-right">
@@ -17,7 +13,7 @@ function EventInfo() {
           <p className="time">4:00 pm – 9 Nov, 2:00 pm</p>
 
           <div className="location">
-            <span className="pin">📍</span>
+            
             <div>
               <strong>Polaris School of Technology</strong>
               <p>Bengaluru, Karnataka</p>
