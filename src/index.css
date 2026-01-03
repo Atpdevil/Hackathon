@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #0f172a;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #0b1c4d;
+  color: white;
+}
+
+.nav-left {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.nav-right a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(120deg, #0b1c4d, #102a7a);
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.badge {
+  display: inline-block;
+  background: #22c55e;
+  color: #022c22;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* CONTENT SECTIONS */
+.content {
+  background: white;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  color: #0b1c4d;
+}
+
+.content p {
+  max-width: 700px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.closed {
+  font-weight: 600;
+  color: #dc2626;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .content {
+    padding: 60px 20px;
+  }
+}
+
+.usecase {
+  border-top: 1px solid #e5e7eb;
+}
+
+.usecase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.usecase-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0b1c4d;
+  max-width: 85%;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #64748b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.icon.open {
+  background: #2563eb;
+  transform: rotate(180deg);
+}
+
+/* Accordion body */
+.usecase-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.usecase-body.show {
+  max-height: 600px;
+}
+
+.usecase-body > * {
+  padding: 0 10px 20px;
+}
+
+.usecase-body h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0b1c4d;
+}
+
+.usecase-body p,
+.usecase-body li {
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* EVENT WRAPPER */
+.event-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* META */
+.event-meta {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.meta-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+.date-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.date-box .month {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.date-box .day {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.meta-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.time {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.location {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.pin {
+  font-size: 1.1rem;
+}
+
+/* REGISTRATION CARD */
+.registration-card {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.reg-header {
+  padding: 12px 18px;
+  font-weight: 600;
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reg-body {
+  padding: 20px;
+}
+
+.reg-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reg-icon {
+  background: white;
+  color: black;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.reg-body p {
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .event-meta {
+    flex-direction: column;
+  }
+
+  .meta-right h3 {
+    font-size: 1.05rem;
+  }
+}
+
+/* ===== FIX EVENT SECTION VISIBILITY ===== */
+
+/* Event meta text should be BLUE, not white */
+.event-meta {
+  color: #0b1c4d;
+}
+
+/* Date box should be light blue */
+.date-box {
+  background: #e8edff;
+  backdrop-filter: none;
+}
+
+.date-box .month {
+  color: #1e3a8a;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.date-box .day {
+  color: #0b1c4d;
+}
+
+/* Event headings */
+.meta-right h3 {
+  color: #0b1c4d;
+}
+
+.time {
+  color: #475569;
+}
+
+.location strong {
+  color: #0b1c4d;
+}
+
+.location p {
+  color: #475569;
+}
+
+/* Registration card — BLUE version */
+.registration-card {
+  background: #0b1c4d;
+  color: white;
+  backdrop-filter: none;
+}
+
+.reg-header {
+  background: #102a7a;
+  opacity: 1;
+}
+
+.reg-icon {
+  background: white;
+  color: #0b1c4d;
+}
+
+.reg-body p {
+  color: #e5e7eb;
+}
+
+.winners-link {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0b1c4d;
+  text-decoration: none;
+  display: inline-block;
+  margin: 40px 0;
+}
+
+.winners-link:hover {
+  text-decoration: underline;
+  color: #102a7a;
+}
+
+.winner-card {
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border-left: 6px solid #0b1c4d;
+}
+
+.winner-card h3 {
+  color: #0b1c4d;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.winner-card ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.winner-card li {
+  color: #334155;
+  font-size: 1rem;
+}
+
+/* Rank-specific accents */
+.winner-card.first {
+  border-left-color: #16a34a; /* green */
+}
+
+.winner-card.second {
+  border-left-color: #2563eb; /* blue */
+}
+
+.winner-card.third {
+  border-left-color: #f59e0b; /* amber */
+}
+
+.prize-note {
+  max-width: 700px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.prize-box {
+  background: #eef2ff;
+  border-left: 5px solid #0b1c4d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.prize-box ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prize-box li {
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.hero-darkveil {
+  position: relative;
+  overflow: hidden;
+}
+
+.darkveil-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional readability boost */
+.hero-darkveil::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 28, 77, 0.55);
+  z-index: 1;
+}
+
+.darkveil-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.darkveil-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
