@@ -1,5 +1,3 @@
-import React from "react";
-
 function Winners() {
   return (
     <section className="content">
@@ -10,7 +8,6 @@ function Winners() {
         awarded based on overall performance, innovation, and impact in the Hackathon.
       </p>
 
-      {/* Prize Summary */}
       <div className="prize-box">
         <ul>
           <li>
@@ -18,46 +15,43 @@ function Winners() {
             stay) supported by Replit HQ
           </li>
           <li>
-            <strong>First Runner Up:</strong> ₹4,000 Decathlon gift vouchers
+            <strong>First Runner Up:</strong> ₹8,000 Decathlon gift vouchers
             per team
           </li>
           <li>
-            <strong>Second Runner Up:</strong> ₹2,000 Decathlon gift vouchers
+            <strong>Second Runner Up:</strong> ₹4,000 Decathlon gift vouchers
             per team
           </li>
         </ul>
       </div>
 
-      {/* First Prize */}
       <div className="winner-card first">
-        <h3>Winning Team</h3>
+        <h3>Winners</h3>
         <ul>
-          <li>Goutham V</li>
-          <li>Gokul Krishna S</li>
-          <li>John Nikhil G</li>
-          <li>Nithin K Y</li>
+          <li>Goutham V - 1AM23CS068</li>
+          <li>Gokul Krishna S - 1AM23CS067</li>
+          <li>John Nikhil G - 1AM23CS076</li>
+          <li>Nithin K Y - 1AM23CS124</li>
         </ul>
       </div>
 
-      {/* First Runner Up */}
       <div className="winner-card second">
         <h3>First Runner Up</h3>
         <ul>
-          <li>Nikhil K</li>
-          <li>Mohammed Faiz</li>
-          <li>Johan K George</li>
-          <li>Kavana D</li>
+          <li>Nikhil K - 1AM23CS112</li>
+          <li>Mohammed Faiz - 1AM23CS111</li>
+          <li>Johan K George - 1AM23CS075</li>
+          <li>Kavana D - 1AM23CS085</li>
         </ul>
       </div>
 
-      {/* Second Runner Up */}
       <div className="winner-card third">
         <h3>Second Runner Up</h3>
         <ul>
-          <li>Pavan Tej K</li>
-          <li>Jayalaksmi V</li>
-          <li>Kousalya R</li>
-          <li>Monalisa S</li>
+          <li>Pavan Tej K - 1AM23CS134</li>
+          <li>Jayalaksmi V - 1AM23CS073</li>
+          <li>Kousalya R - 1AM23CS089</li>
+          <li>Monalisa S - 1AM23CS117</li>
         </ul>
       </div>
     </section>

@@ -34,9 +34,9 @@ function Home() {
       <section className="content" id="how">
         <h2>​​The Breakdown</h2>
         <p>
-          <strong>Sep 17 → </strong>Registrations open (and the hype machine starts) <br/>
-          <strong>Sep 17 → </strong>Applications closed <br/>
-          <strong>Nov 19 → </strong>​12 hours of pure building madness + Demo day + Results
+          <strong>Jan 03 → </strong>Registrations open (and the hype machine starts) <br/>
+          <strong>Jan 09 → </strong>Applications closed <br/>
+          <strong>Jan 12 → </strong>​12 hours of pure building madness + Demo day + Results
         </p>
       </section>
 

@@ -9,13 +9,13 @@ function EventInfo() {
         </div>
 
         <div className="meta-right">
-          <h3>Friday, 7 November 2025</h3>
-          <p className="time">4:00 pm – 9 Nov, 2:00 pm</p>
+          <h3>Monday, 12 Janauary 2026</h3>
+          <p className="time">8:30 am – 5:30 pm</p>
 
           <div className="location">
             
             <div>
-              <strong>Polaris School of Technology</strong>
+              <strong>AMC Engineeing College</strong>
               <p>Bengaluru, Karnataka</p>
             </div>
           </div>
