@@ -38,7 +38,7 @@ function Home() {
         <p>
           <strong>Jan 03 → </strong>Registrations open (and the hype machine starts) <br/>
           <strong>Jan 09 → </strong>Applications closed <br/>
-          <strong>Jan 12 → </strong>​12 hours of pure building madness + Demo day + Results
+          <strong>Jan 12 → </strong>​07 hours of pure building Project + Demo day
         </p>
       </section>
 
