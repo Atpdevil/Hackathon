@@ -109,7 +109,7 @@ function Home() {
       >
         <h3>FLegal Writer and Redliner (Production-grade)</h3>
 
-        <p><strong>Goal:</strong> PBoost legal team productivity with draft creation, redlining, and document quality checks.</p>
+        <p><strong>Goal:</strong> Boost legal team productivity with draft creation, redlining, and document quality checks.</p>
 
         <ul>
           <li>
@@ -130,10 +130,10 @@ function Home() {
       </section>
 
       <section className="content" id="faq">
-        <h2>​​About Polaris School of Technology</h2>
-        <p>​​Polaris School of Technology, a Bengaluru-based 4-year Computer Science program, is a new-age tech school building the next generation of techies.
+        <h2>​​About AMC Engineering College</h2>
+        <p>​​AMC Engineering College, a Bengaluru-based 4-year Computer Science program, is a new-age tech college building the next generation of techies.
           <br/>
-          PolarisEvents, an initiative by Polaris, is BLR's coolest destination for everything happening in tech. We're the place techies watch out for. If something innovative is brewing in the city's tech scene, chances are we're behind it. :P
+          PolarisEvents, an initiative by Polaris, is BLR's coolest destination for everything happening in tech. We're the place techies watch out for. If something innovative is brewing in the city's tech scene, chances are we're behind it.
         </p>
       </section>
     </>
