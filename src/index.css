@@ -10,7 +10,6 @@ body {
   color: #0f172a;
 }
 
-/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -81,7 +80,6 @@ body {
   width: fit-content;
 }
 
-/* CONTENT SECTIONS */
 .content {
   background: white;
   padding: 80px 40px;
@@ -114,7 +112,6 @@ body {
   color: #dc2626;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -173,7 +170,6 @@ body {
   transform: rotate(180deg);
 }
 
-/* Accordion body */
 .usecase-body {
   max-height: 0;
   overflow: hidden;
@@ -200,7 +196,6 @@ body {
   line-height: 1.6;
 }
 
-/* EVENT WRAPPER */
 .event-wrapper {
   max-width: 900px;
   margin: 60px auto;
@@ -210,7 +205,6 @@ body {
   gap: 30px;
 }
 
-/* META */
 .event-meta {
   display: flex;
   gap: 20px;
@@ -318,9 +312,6 @@ body {
   }
 }
 
-/* ===== FIX EVENT SECTION VISIBILITY ===== */
-
-/* Event meta text should be BLUE, not white */
 .event-meta {
   color: #0b1c4d;
 }
