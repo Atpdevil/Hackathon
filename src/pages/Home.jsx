@@ -17,10 +17,12 @@ function Home() {
         </div>
       </section>
 
-      <EventInfo />
-      <Link to="/winners" className="winners-link">
-        See Winners & Prizes ↗
-      </Link>
+        <div className="center-box">
+          <EventInfo />
+          <Link to="/winners" className="winners-link">
+            See Winners & Prizes ↗
+          </Link>
+        </div>
 
       <section className="content" id="how">
         <h2>About the Hackathon</h2>
