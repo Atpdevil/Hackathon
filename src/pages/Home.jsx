@@ -9,7 +9,7 @@ function Home() {
       {/* HERO */}
       <section className="hero hero-darkveil">
         <div className="hero-content">
-          <h1>HACKATHON 2026 | Replit X Polaris School of Technology</h1>
+          <h1>HACKATHON 2026 | Replit X AMC Engineering College</h1>
           <p>
             Be part of a modern hackathon focused on fast demos, real impact,
             and practical innovation.

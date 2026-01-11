@@ -13,8 +13,7 @@ function Winners() {
       <div className="prize-box">
         <ul>
           <li>
-            <strong>Winning Team:</strong> Sponsored trip to Goa (travel &
-            stay) supported by Replit HQ
+            <strong>Winning Team:</strong> Sponsored trip to Goa supported by Replit HQ
           </li>
           <li>
             <strong>First Runner Up:</strong> ₹8,000 Decathlon gift vouchers
